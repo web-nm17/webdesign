@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>WebDesign</title>
+    <!-- ファビコン（サイトアイコン）はtitleタグの下に設定する -->
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <!-- CSSを読み込むコードを設定 titleの下に設定する stylecss-->
+    <!-- CSSを読み込む前にCSSをリセットさせる設定をする resetcss-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body id="top">
+    <!-- グループ化はdivを設定する CSSの書式設定するために使用-->
+    <div class="container">
+        <header>
+            <!-- コメントはcntl / -->
+            <!-- サイト名は大見出しh1を設定する -->
+            <h1><a href="index.html">WebDesign</a></h1>
+        </header>
+        <!-- メニューはリストul-liを設定する -->
+        <!-- メインメニューはnavを設定する -->
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="next.html">下層ページの構成</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+
+        <!-- ［メインビジュアル］ -->
+        <p class="visual"><img src="img/web.jpg" alt="Webページ制作言語"></p>
+
+        <main>
+            <!-- sectionには必ず見出しh●を設定する -->
+            <section>
+                <h2>TOPページの見出し</h2>
+                <p>TOPページの大見出し（h1）はサイト名に設定するので、mainタグ内は中見出し（h2）から使い始める。</p>
+            </section>
+            <section>
+                <h2>セクションとは</h2>
+                <p>見出しとその内容は、sectionタグでグループ化する。小見出しがある場合、中見出し（h2）のsectionの中に小見出し（h3）のsectionが入ることもある。</p>
+            </section>
+            <aside>
+                <p>バナーや注意書き、サイドバーなどの補足情報はasideで囲む。</p>
+            </aside>
+        </main>
+    </div>
+
+    <footer>
+        <!-- 著作権はsmallを設定する -->
+        <!-- 記号は右クリック コマンドパレット html Convert to…を設定する -->
+        <p class="pagetop"><a href="#top"><img src="img/gotop.svg" width="32" alt="ページトップへ"></a></p>
+        <p class="copyright">
+            <small>
+                &copy;2021 WebDesign.
+                <span>All Rights Reserved.</span>
+            </small>
+        </p>
+    </footer>
+</body>
+</html>

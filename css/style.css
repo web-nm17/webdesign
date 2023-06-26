@@ -1,0 +1,114 @@
+/*［bodyの書式］文字色:濃いグレー、文字サイズ:16px、書体:游ゴシック体、背景色:ベージュ */
+body {
+  /* テキストのデフォルトの書式 */
+  color: #333;
+  font-size: 16px;
+  font-family: "Yu Gothic Medium", YuGothic, sans-serif;
+  /* ページの背景色 */
+  background-color: beige;
+}
+
+/*［リンク文字の書式］文字色：親と同じ、下線なし → body書式の下へ移動、WebDesignにリンクを設定 */
+a {
+  /* 親と同じ色を設定するときはinheritを使用 */
+  color: inherit;
+  text-decoration: none;
+}
+
+/*［class="container"の書式］背景色:白、幅:980px、中央配置、内側左右余白:20px */
+/* class=" "の書式設定は.（ドット）を入力 */
+.container {
+  background-color: #fff;
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/*［WebDesignの書式］
+背景色:青、文字色:白、中央揃え、余白:30px
+→文字サイズ:30px、太字
+→外側下余白:20px */
+header h1 {
+  background-color: blue;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/*［メニューの書式］上下ボーダー（線幅:2px、線種:直線、線カラー:任意）、外側下余白:20px、中央揃え、内側上下余白:15px */
+header nav {
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-top-color: brown;
+  border-bottom: 2px solid brown;
+  margin-bottom: 20px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/*［メニュー項目の書式］１行で表示、隣との間:20px */
+header nav li {
+  /* 一行にまとめるにはdisplayを設定する */
+  display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/*［メニューのリンク文字のホバー設定］下線表示、不透明度:70% */
+header nav li a:hover {
+  text-decoration: underline;
+  opacity: 0.7;
+}
+
+/*［HOMEの書式］太字 */
+header nav li a.active {
+  font-weight: bold;
+}
+
+/*［メインビジュアルの書式］下余白:20px */
+p.visual {
+  padding-bottom: 20px;
+}
+
+/*［mainの書式］下余白:30px */
+main {
+  padding-bottom: 30px;
+}
+
+/*［main sectionの書式］背景色:任意、内側余白:20px、外側下余白:20px */
+main section {
+  background-color: blanchedalmond;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/*［main section h2の書式］文字サイズ:20px、太字、下ボーダー（線幅:2px、線種:直線、線カラー:#333）、文字とボーダー間の余白:5px、外側下余白:10px */
+main section h2 {
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 2px solid #333;
+  /* background-color: aquamarine;背景色を一時的に設定し余白をわかりやすくする */
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+/*［main section pの書式］行の高さ:文字サイズの1.5倍 */
+main section p {
+  line-height: 1.5;
+}
+
+/*［footerの書式］背景色:黒、文字色:白、中央揃え、高さ:50px */
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  /* 高さを設定するときheightは使用しない */
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
